@@ -13,7 +13,7 @@ body{
 }
 
 .wrapper{
-    width: 800px;
+    width: 80px;
     margin: 0 auto;
     background-color: white;
 }
@@ -25,16 +25,17 @@ body{
 .image-container{
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .image{
-    flex-basis: calc(33.33% - 10px);
+    flex-basis: calc(33.33%);
 }
 
 .image img{
     max-width: 100%;
     height: auto;
-    margin-bottom: -4px;
+    display: block;
 }
 
 main{
@@ -109,6 +110,13 @@ article{
 }
 
 /* When min width is 481px and max width is 800px */
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    .wrapper {
+        width: 100%;
+    }
+    
+}
 
 
 
