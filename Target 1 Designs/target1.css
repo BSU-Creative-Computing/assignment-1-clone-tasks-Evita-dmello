@@ -1,9 +1,11 @@
+/* Resetting styles for all elements */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Styling for the body of the page */
 body{
     margin: 0;
     padding: 0;
@@ -12,47 +14,55 @@ body{
     font-family: sans-serif;
 }
 
+/* Styling the wrapper that centers the content */
 .wrapper{
     margin: 0 auto;
     background-color: white;
 }
 
+/* Styling for the first image container */
 .image1{
     margin-right: 20px;
 }
 
+/* Styling the container which has 6 images in it */
 .images-container{
     display: flex;
     flex-wrap: wrap;
     
 }
 
+/* Styling images within the container */
 .image{
     flex-basis: calc(33.33%);
 }
 
+/* Styling for images inside an image container */
 .image img{
     max-width: 100%;
     height: auto;
     display: block;
 }
 
+/* Styling the main content */
 main{
     padding: 20px;
     overflow: hidden;
 }
 
+/* Styling for section which is in the main content */
 section{
     width: 100%;
     float: left;
     text-align: justify;
 }
 
+/* Styling the article within the sections */
 article{
     padding: 10px 0;
 }
 
-
+/* Styling the footer content */
 .footer {
     background-color: black;
     color: white;
@@ -63,6 +73,7 @@ article{
 /* When max-width is 480px */
 
 @media screen and (max-width: 480px) {
+    /* Adjustments made for the wrapper and layout for a smaller screen */
     .wrapper {
         width: 100%;
     }
@@ -108,9 +119,10 @@ article{
     }    
 }
 
-/* When min width is 481px and max width is 800px */
+/* When min-width is 481px and max-width is 800px */
 
 @media screen and (min-width: 481px) and (max-width: 800px) {
+    /* Adjustments made for the wrapper and layout for medium screen */
     .wrapper {
         width: 100%;
     }
@@ -148,6 +160,7 @@ article{
 /* When min width is 801px and max width is 1024px */
 
 @media screen and (min-width: 801px) and (max-width: 1024px) {
+    /* Adjustments made for the wrapper and layout for larger screen */
     .wrapper {
         width: 100%;
     }
@@ -184,6 +197,7 @@ article{
 /* When min width is 1025px */
 
 @media screen and (min-width: 1025px) {
+    /* Adjustments made for the wrapper and layout for extra-large screen */
     .wrapper {
         width: 90%;
         margin: 0 auto;
