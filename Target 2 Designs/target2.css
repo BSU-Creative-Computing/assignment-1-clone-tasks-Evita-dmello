@@ -153,10 +153,21 @@ footer{
     padding: 1.5em;
 }
 
+/* When min-width is 1280 */
+@media (min-width: 1281px) {
+    .container {
+        width: 80%;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+}
+
 /* When min-width is 1025px and max-width is 1280px */
 @media (max-width: 1280px) {
     .container {
-        width: 90%;
+        width: 95%;
     }
 
     #mobile-menu {
